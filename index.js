@@ -25,13 +25,13 @@ var createPublicGistRequestObj = function ( id ) {
 
 var getPublicGistsByUsername = function ( username, cb ) {
 	request( createPublicGistsRequestObj( username ), function ( error, response, body ) {
-		cb( error, body );
+		cb( error, JSON.parse( body ) );
 	} );
 };
 
 var getPublicGistById = function ( id, cb ) {
 	request( createPublicGistRequestObj( id ), function ( error, response, body ) {
-		cb( error, body );
+		cb( error, JSON.parse( body ) );
 	} );
 };
 
