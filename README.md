@@ -23,7 +23,7 @@ gists.getPublicGistsByUsername( 'wixo', function ( result ) {
 	console.log( 'Public Gists by username response object: ', JSON.parse( result ) );
 } );
 
-gist.getPublicGistById( 1, function ( result ) {
+gists.getPublicGistById( 1, function ( result ) {
 	console.log( 'Public Gist by id response object: ', JSON.parse( result ) );
 } );
 ```
