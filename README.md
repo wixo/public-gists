@@ -19,12 +19,18 @@ var gists = require('public-gists');
 ## Call the API
 
 ```
-gists.getPublicGistsByUsername( 'wixo', function ( result ) {
-	console.log( 'Public Gists by username response object: ', JSON.parse( result ) );
+gists.getPublicGistsByUsername( 'wixo', function ( error, result ) {
+	if ( error ) {
+		throw new Error( 'There was an error', error );
+	}
+	console.log( 'getPublicGistsByUsername: ', result );
 } );
 
-gists.getPublicGistById( 1, function ( result ) {
-	console.log( 'Public Gist by id response object: ', JSON.parse( result ) );
+gists.getPublicGistById( 1, function ( error, result ) {
+	if ( error ) {
+		throw new Error( 'There was an error', error );
+	}
+	console.log( 'getPublicGistById: ', result );
 } );
 ```
 
