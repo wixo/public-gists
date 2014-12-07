@@ -1,6 +1,6 @@
 {
   "name": "public-gists",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Fetch public github gists by username and id with no authentication",
   "main": "index.js",
   "scripts": {
