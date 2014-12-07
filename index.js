@@ -25,23 +25,13 @@ var createPublicGistRequestObj = function ( id ) {
 
 var getPublicGistsByUsername = function ( username, cb ) {
 	request( createPublicGistsRequestObj( username ), function ( error, response, body ) {
-		if ( error ) {
-			throw new Error( body.message );
-		}
-		if ( !error && response.statusCode === 200 ) {
-			cb( body );
-		}
+		cb( error, body );
 	} );
 };
 
 var getPublicGistById = function ( id, cb ) {
 	request( createPublicGistRequestObj( id ), function ( error, response, body ) {
-		if ( error ) {
-			throw new Error( body.message );
-		}
-		if ( !error && response.statusCode === 200 ) {
-			cb( body );
-		}
+		cb( error, body );
 	} );
 };
 
