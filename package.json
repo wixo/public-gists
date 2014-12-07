@@ -1,0 +1,22 @@
+{
+  "name": "public-gists",
+  "version": "0.0.0",
+  "description": "Fetch public github gists by username and id with no authentication",
+  "main": "index.js",
+  "scripts": {
+    "test": "for f in test/*; do echo \"$f\"; node \"$f\"; done; echo 'passed!'; exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wixo/public-gists"
+  },
+  "keywords": [
+    "github",
+    "gists"
+  ],
+  "author": "@wxo",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.49.0"
+  }
+}
