@@ -7,7 +7,7 @@ Fetch public github gists by username and id with no authentication
 Install via NPM
 
 ```
-npm install github-api
+npm install public-gists
 ```
 
 ## Require it
