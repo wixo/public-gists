@@ -1,6 +1,7 @@
 # Public Gists
 
 Fetch public github gists by username and id with no authentication
+WARNING: you may hit API cap really fast, this is mostly for experimentation
 
 ## Installation
 
